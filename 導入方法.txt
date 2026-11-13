@@ -1,0 +1,13 @@
+ROU CYBER DEFENSE - DARK SKULL EDITION
+
+既存のゲームを壊さず、背景を追加する方式です。
+
+1. dark-skull.css と dark-skull.js を GitHub リポジトリのルートにアップロード。
+2. index.html の </head> の直前に以下を追加：
+<link rel="stylesheet" href="dark-skull.css?v=1">
+3. index.html の </body> の直前に以下を追加：
+<script src="dark-skull.js?v=1"></script>
+4. Commit changes を押し、GitHub Pages の反映後にSafariを再読み込み。
+
+元に戻すには、追加した2行を削除します。
+既存のHTML/CSSの構造によっては配色の追加調整が必要です。

@@ -1,0 +1,16 @@
+/* ROU CYBER DEFENSE - DARK SKULL theme, additive and reversible */
+:root { color-scheme: dark; --skull-red:#ff3459; --skull-cyan:#42e8ff; }
+html { background:#050810!important; }
+body { background: radial-gradient(ellipse at 50% 15%,#18223a 0%,#080b15 48%,#03050a 100%) fixed!important; color:#e7f4ff!important; position:relative; isolation:isolate; }
+body::before { content:""; pointer-events:none; position:fixed; inset:0; z-index:-1; opacity:.45; background:repeating-linear-gradient(0deg,transparent 0 3px,rgba(65,232,255,.025) 3px 4px); }
+#rou-skull-backdrop {position:fixed;inset:0;z-index:-1;pointer-events:none;overflow:hidden;display:grid;place-items:center;}
+#rou-skull-backdrop svg {width:min(88vw,650px);height:auto;opacity:.23;filter:drop-shadow(0 0 35px #ff245e);animation:rouSkullFloat 9s ease-in-out infinite,rouSkullPulse 5s ease-in-out infinite;}
+#rou-skull-backdrop::after {content:"SECURITY MONITORING // ROU SYSTEM";position:absolute;bottom:5%;font:10px ui-monospace,monospace;letter-spacing:.32em;color:#4dd7ef;opacity:.45;text-align:center;}
+@keyframes rouSkullFloat {0%,100%{transform:translate3d(0,12px,0) rotate(-2deg)}50%{transform:translate3d(0,-17px,0) rotate(2deg)}}
+@keyframes rouSkullPulse {0%,100%{filter:drop-shadow(0 0 16px #ff245e)}50%{filter:drop-shadow(0 0 42px #ff245e)}}
+header,main,section,article,.card,.panel,.box {border-color:rgba(66,232,255,.25)!important;}
+button,input,select,textarea {accent-color:#42e8ff;}
+button {transition:box-shadow .2s,transform .2s;}
+button:hover {box-shadow:0 0 16px rgba(66,232,255,.25);}
+input,textarea,select {font-size:16px!important;}
+@media(prefers-reduced-motion:reduce){#rou-skull-backdrop svg{animation:none!important}}
